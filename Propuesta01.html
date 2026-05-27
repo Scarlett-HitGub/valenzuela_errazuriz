@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Valenzuela y Errázuriz Consultores</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Poppins', sans-serif;
+      background:#f4f8fb;
+      color:#2d3436;
+      line-height:1.7;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0f4c81,#1f7a8c);
+      color:white;
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:3rem;
+      margin-bottom:15px;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    header p{
+      max-width:800px;
+      margin:auto;
+      font-size:1.1rem;
+      opacity:0.95;
+    }
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:auto;
+      padding:60px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h2{
+      color:#0f4c81;
+      font-size:2.2rem;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#555;
+    }
+
+    .card{
+      background:white;
+      border-radius:18px;
+      padding:35px;
+      margin-bottom:35px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+      margin-top:30px;
+    }
+
+    .profile{
+      background:#ffffff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 8px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .profile:hover{
+      transform:translateY(-5px);
+    }
+
+    .profile .photo{
+      height:220px;
+      background:linear-gradient(135deg,#1f7a8c,#0f4c81);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:1.2rem;
+      font-weight:600;
+    }
+
+    .profile-content{
+      padding:25px;
+    }
+
+    .profile-content h3{
+      color:#0f4c81;
+      margin-bottom:10px;
+    }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .service-box{
+      background:white;
+      border-radius:18px;
+      padding:35px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.07);
+      border-top:6px solid #1f7a8c;
+    }
+
+    .service-box h3{
+      margin-bottom:20px;
+      color:#0f4c81;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    li{
+      margin-bottom:12px;
+    }
+
+    .methodology{
+      background:linear-gradient(135deg,#0f4c81,#1f7a8c);
+      color:white;
+      border-radius:22px;
+      padding:50px;
+      margin-top:50px;
+    }
+
+    .methodology h2{
+      margin-bottom:25px;
+      text-align:center;
+      font-size:2rem;
+    }
+
+    .methodology ul{
+      max-width:900px;
+      margin:auto;
+    }
+
+    footer{
+      text-align:center;
+      background:#0b2d4d;
+      color:white;
+      padding:30px 20px;
+      margin-top:60px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.2rem;
+      }
+
+      .methodology{
+        padding:35px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Valenzuela y Errázuriz Consultores</h1>
+    <p>
+      Acompañamos procesos educativos con experiencia, compromiso y vocación,
+      fortaleciendo comunidades escolares y generando oportunidades de crecimiento
+      para estudiantes, docentes y equipos directivos.
+    </p>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <div class="section-title">
+        <h2>Nosotras y Nosotros</h2>
+        <p>Más de 25 años vinculadas y vinculados al mundo de la educación.</p>
+      </div>
+
+      <div class="card">
+        <p>
+          Somos profesionales con una extensa trayectoria en el ámbito educativo,
+          participando en la creación y fortalecimiento de establecimientos educacionales
+          que continúan vigentes hasta hoy.
+        </p>
+
+        <br>
+
+        <p>
+          Nuestro trabajo se enfoca en apoyar proyectos educativos, acompañar a equipos
+          directivos, capacitar docentes y fortalecer la convivencia escolar mediante
+          procesos cercanos, reflexivos y prácticos.
+        </p>
+
+        <br>
+
+        <p>
+          Creemos profundamente que la educación transforma vidas y permite construir
+          proyectos personales y colectivos con sentido.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="profile">
+          <div class="photo">
+            Fotografía de Oscar Errázuriz
+          </div>
+
+          <div class="profile-content">
+            <h3>Oscar Errázuriz Spoerer</h3>
+
+            <p>
+              Profesor de Lenguaje y Comunicación con experiencia en establecimientos
+              particulares, subvencionados, municipales y de administración delegada.
+            </p>
+
+            <br>
+
+            <p>
+              Ha dirigido cuatro colegios distintos y participado en la formación
+              y puesta en marcha de establecimientos educacionales en la Región
+              Metropolitana y Región de Los Lagos.
+            </p>
+
+            <br>
+
+            <p>
+              Además, se ha desempeñado como coach ontológico y mentor de directores
+              nóveles en programas universitarios.
+            </p>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="photo">
+            Fotografía de Gabriela Valenzuela
+          </div>
+
+          <div class="profile-content">
+            <h3>Gabriela Valenzuela Fuentes</h3>
+
+            <p>
+              Asistente de Administración y Finanzas y Gerenta General de
+              Valenzuela y Errázuriz Consultores.
+            </p>
+
+            <br>
+
+            <p>
+              Cuenta con experiencia como administradora de establecimientos
+              educacionales y en la gestión de fondos para proyectos educativos
+              y programas de extensión escolar.
+            </p>
+
+            <br>
+
+            <p>
+              También ha desarrollado procesos de capacitación orientados
+              a la captación y atención de clientes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section style="margin-top:70px;">
+      <div class="section-title">
+        <h2>¿Qué ofrecemos?</h2>
+        <p>Servicios orientados al fortalecimiento institucional y educativo.</p>
+      </div>
+
+      <div class="services">
+
+        <div class="service-box">
+          <h3>Área Gestión Escolar</h3>
+
+          <ul>
+            <li>Acompañamiento y mentoría para directores y directoras nóveles.</li>
+
+            <li>Revisión y actualización de Reglamentos Internos de Convivencia Escolar.</li>
+
+            <li>Actualización de Proyectos Educativos Institucionales.</li>
+
+            <li>Revisión de prácticas administrativas según lineamientos de la Superintendencia de Educación.</li>
+
+            <li>Capacitación a equipos administrativos vinculados al ámbito educativo.</li>
+
+            <li>Organización y ejecución de salidas educativas.</li>
+          </ul>
+        </div>
+
+        <div class="service-box">
+          <h3>Área Recuperación de Estudios</h3>
+
+          <ul>
+            <li>Programas enfocados en jóvenes y adultos mayores de 18 años.</li>
+
+            <li>Modalidad flexible y adaptada a las necesidades de cada participante.</li>
+
+            <li>Clases presenciales con acompañamiento personalizado.</li>
+
+            <li>Encuentros pedagógicos orientados al aprendizaje significativo.</li>
+
+            <li>Sedes ubicadas en sectores urbanos y no urbanos.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="methodology">
+      <h2>¿Cómo lo hacemos?</h2>
+
+      <ul>
+        <li>Nuestra participación en cada programa es completamente presencial.</li>
+
+        <li>Trabajamos en conjunto con cada institución para establecer acuerdos y plazos claros.</li>
+
+        <li>Elaboramos informes de avance durante cada intervención.</li>
+
+        <li>Promovemos espacios de reflexión pedagógica entre docentes y actores sociales.</li>
+
+        <li>Organizamos salidas pedagógicas para enriquecer las experiencias de aprendizaje.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      © 2026 Valenzuela y Errázuriz Consultores · Educación, acompañamiento y desarrollo institucional.
+    </p>
+  </footer>
+
+</body>
+</html>
