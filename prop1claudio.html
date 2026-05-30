@@ -14,13 +14,13 @@
 
     <style>
         :root {
-            --verde: #4a7c59;
+            --verde: #467554;
             --verde-claro: #6fa080;
-            --verde-suave: #e8f2ec;
-            --crema: #faf8f3;
+            --verde-suave: #f7eedd;
+            --crema: #f1eddf;
             --arena: #f0ebe0;
             --cafe: #7a6550;
-            --texto: #2d2926;
+            --texto: #131110;
             --gris-suave: #f5f5f2;
         }
 
@@ -50,7 +50,7 @@
             position: sticky;
             top: 0;
             z-index: 100;
-            box-shadow: 0 2px 12px rgba(74, 124, 89, 0.08);
+            box-shadow: 0 1px 6px rgba(28, 48, 34, 0.452);
         }
 
         .navbar-brand {
@@ -91,7 +91,7 @@
         /* HERO */
         .hero {
             background: linear-gradient(135deg, var(--verde) 0%, var(--verde-claro) 60%, #8fbc9e 100%);
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 5rem 0 4rem;
             position: relative;
             overflow: hidden;
@@ -135,7 +135,7 @@
         }
 
         .hero .lead {
-            font-size: 1.05rem;
+            font-size: 1.20rem;
             opacity: 0.92;
             max-width: 620px;
             line-height: 1.7;
@@ -202,7 +202,7 @@
         .nosotros-text {
             font-size: 1.05rem;
             line-height: 1.85;
-            color: #3a3632;
+            color: #131110;
         }
 
         .nosotros-highlight {
@@ -262,66 +262,38 @@
         .person-card p {
             font-size: 0.92rem;
             line-height: 1.75;
-            color: #5a524a;
+            color: #0e0c0b;
         }
 
         /* SERVICIOS */
-        .area-card {
-            background: white;
-            border-radius: 16px;
-            padding: 2rem 2rem 1.5rem;
-            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.07);
-            height: 100%;
-        }
+        /* CARDS */
 
-        .area-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 14px;
-            background: var(--verde-suave);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.2rem;
-            font-size: 1.5rem;
-        }
+    .card-custom {
+      background: white;
+      border: none;
+      border-radius: 18px;
+      padding: 2rem;
+      height: 100%;
+      box-shadow: 0 5px 25px rgba(74, 124, 89, 0.08);
+      transition: 0.3s;
+    }
 
-        .area-card h3 {
-            font-size: 1.05rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            color: var(--verde);
-            margin-bottom: 1.1rem;
-        }
+    .card-custom:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(74, 124, 89, 0.12);
+    }
 
-        .area-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .card-custom h4,
+    .card-custom h5 {
+      color: var(--verde);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
 
-        .area-list li {
-            font-size: 0.9rem;
-            line-height: 1.6;
-            padding: 0.45rem 0;
-            border-bottom: 1px solid var(--verde-suave);
-            padding-left: 1.2rem;
-            position: relative;
-            color: #3a3632;
-        }
-
-        .area-list li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: var(--verde-claro);
-            font-size: 0.8rem;
-        }
-
-        .area-list li:last-child {
-            border-bottom: none;
-        }
+    .card-custom p {
+      color: #524d48;
+      line-height: 1.8;
+    }
 
         /* CÓMO LO HACEMOS */
         .como-item {
@@ -475,11 +447,10 @@
     </section>
 
     <!-- NOSOTROS -->
-    <section class="section" id="nosotros">
+    <section class="section section-verde" id="nosotros">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-7 text-center">
-                    <span class="section-label">Quiénes somos</span>
                     <h2 class="section-title">Nosotros</h2>
                     <div class="divider"></div>
                 </div>
@@ -582,53 +553,81 @@
     </section>
 
     <!-- SERVICIOS -->
-    <section class="section section-alt" id="servicios">
-        <div class="container">
-            <div class="row justify-content-center mb-4">
-                <div class="col-lg-7 text-center">
-                    <span class="section-label">Lo que hacemos</span>
-                    <h2 class="section-title">¿Qué ofrecemos?</h2>
-                    <div class="divider"></div>
-                </div>
-            </div>
-            <div class="row g-4 justify-content-center">
+    <section id="metodologia" class="section section-verde">
 
-                <div class="col-md-6 col-lg-5">
-                    <div class="area-card">
-                        <div class="area-icon">🏫</div>
-                        <h3>Gestión Escolar</h3>
-                        <ul class="area-list">
-                            <li>Acompañamiento con mentoría en instalación de Directores y Directoras Nóveles</li>
-                            <li>Revisión y actualización del Reglamento Interno de Convivencia Escolar</li>
-                            <li>Revisión y actualización del Proyecto Educativo Institucional</li>
-                            <li>Revisión de prácticas administrativas según Superintendencia de Educación</li>
-                            <li>Capacitación de administrativos y su vínculo con la educación</li>
-                            <li>Organización y ejecución de Salidas Educativas</li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="container">
 
-                <div class="col-md-6 col-lg-5">
-                    <div class="area-card">
-                        <div class="area-icon">📚</div>
-                        <h3>Recuperación de Estudios</h3>
-                        <ul class="area-list">
-                            <li>Programa con foco en adultos y jóvenes mayores de 18 años</li>
-                            <li>Modalidad flexible</li>
-                            <li>Clases presenciales</li>
-                            <li>Acompañamiento personalizado</li>
-                            <li>Encuentros pedagógicos</li>
-                            <li>Sedes en sectores urbanos y no urbanos</li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="text-center mb-5">
+        <h2 class="section-title">¿Cómo Trabajamos?</h2>
 
-            </div>
+        <p class="section-subtitle">
+          Nuestra metodología pone en el centro el acompañamiento,
+          la colaboración y la experiencia presencial.
+        </p>
+      </div>
+
+      <div class="row g-4 text-center">
+
+        <div class="col-md-3">
+          <div class="card-custom">
+
+            <h5>Trabajo Presencial</h5>
+
+            <p>
+              Todas nuestras intervenciones se desarrollan
+              directamente en terreno.
+            </p>
+
+          </div>
         </div>
-    </section>
+
+        <div class="col-md-3">
+          <div class="card-custom">
+
+            <h5>Acuerdos Claros</h5>
+
+            <p>
+              Definimos objetivos, tiempos y compromisos
+              junto a cada institución.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card-custom">
+
+            <h5>Seguimiento</h5>
+
+            <p>
+              Elaboramos informes de avance y evaluación
+              continua de los procesos.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card-custom">
+
+            <h5>Reflexión Pedagógica</h5>
+
+            <p>
+              Generamos espacios de encuentro y diálogo
+              entre distintos actores educativos.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
 
     <!-- CÓMO LO HACEMOS -->
-    <section class="section" id="como">
+    <section class="section section-verde" id="como">
         <div class="container">
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-7 text-center">
